@@ -18,6 +18,16 @@ module.exports = {
       subtotal: {
         type: Sequelize.DECIMAL
       },
+      pedido_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'pedidos', key: 'id' }  
+      },
+      livro_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'livros', key: 'id' }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

@@ -21,6 +21,26 @@ module.exports = {
       numero_paginas: {
         type: Sequelize.INTEGER
       },
+      genero_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'generos', key: 'id' }
+      },
+      editora_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'editoras', key: 'id' }
+      },
+      autor_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'autores', key: 'id' }
+      },
+      fornecedor_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'fornecedores', key: 'id' }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

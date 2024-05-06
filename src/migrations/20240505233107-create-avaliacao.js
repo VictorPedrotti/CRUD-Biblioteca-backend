@@ -18,6 +18,16 @@ module.exports = {
       comentario: {
         type: Sequelize.STRING
       },
+      cliente_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'clientes', key: 'id' }
+      },
+      livro_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'livros', key: 'id' }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

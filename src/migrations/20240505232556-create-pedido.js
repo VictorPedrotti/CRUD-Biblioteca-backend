@@ -15,6 +15,16 @@ module.exports = {
       total: {
         type: Sequelize.DECIMAL
       },
+      cliente_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'clientes', key: 'id' }
+      },
+      forma_pagamento_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'formas_pagamento', key: 'id' }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
