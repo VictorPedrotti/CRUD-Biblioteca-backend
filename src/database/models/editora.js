@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     data_fundacao: DataTypes.DATEONLY
   }, {
     sequelize,
-    modelName: 'editora',
+    modelName: 'Editora',
     tableName: 'editoras'
   });
   return Editora;
