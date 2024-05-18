@@ -1,22 +1,22 @@
 [
   {
-    titulo: 'Node.js',
+    descricao: 'Pix',
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    titulo: 'Java',
+    descricao: 'Cartão de crédito',
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    titulo: 'Python',
+    descricao: 'Boleto bancário',
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    titulo: 'C#',
+    descricao: 'Cartão de débito',
     createdAt: new Date(),
     updatedAt: new Date(),
-  },
+  }
 ];
