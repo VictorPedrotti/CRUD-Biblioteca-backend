@@ -10,5 +10,6 @@ router.get('/fornecedores/:id', (req, res) => fornecedorController.pegaUmPorId(r
 router.post('/fornecedores', (req, res) => fornecedorController.criaNovo(req, res));
 router.put('/fornecedores/:id', (req, res) => fornecedorController.atualiza(req, res));
 router.delete('/fornecedores/:id', (req, res) => fornecedorController.exclui(req, res));
+router.get('/fornecedores/:id/livros', (req, res) => fornecedorController.buscaLivrosPorFornecedorId(req, res));
 
 module.exports = router;

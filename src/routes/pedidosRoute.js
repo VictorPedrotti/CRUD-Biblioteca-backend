@@ -10,5 +10,6 @@ router.get('/pedidos/:id', (req, res) => pedidoController.pegaUmPorId(req, res))
 router.post('/pedidos', (req, res) => pedidoController.criaNovo(req, res));
 router.put('/pedidos/:id', (req, res) => pedidoController.atualiza(req, res));
 router.delete('/pedidos/:id', (req, res) => pedidoController.exclui(req, res));
+router.get('/pedidos/:id/itens', (req, res) => pedidoController.buscaItensPedidoPorId(req, res));
 
 module.exports = router;

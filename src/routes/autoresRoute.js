@@ -10,5 +10,6 @@ router.get('/autores/:id', (req, res) => autorController.pegaUmPorId(req, res));
 router.post('/autores', (req, res) => autorController.criaNovo(req, res));
 router.put('/autores/:id', (req, res) => autorController.atualiza(req, res));
 router.delete('/autores/:id', (req, res) => autorController.exclui(req, res));
+router.get('/autores/:id/livros', (req, res) => autorController.buscaLivrosPorAutorId(req, res));
 
 module.exports = router;

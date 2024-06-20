@@ -10,5 +10,6 @@ router.get('/editoras/:id', (req, res) => editoraController.pegaUmPorId(req, res
 router.post('/editoras', (req, res) => editoraController.criaNovo(req, res));
 router.put('/editoras/:id', (req, res) => editoraController.atualiza(req, res));
 router.delete('/editoras/:id', (req, res) => editoraController.exclui(req, res));
+router.get('/editoras/:id/livros', (req, res) => editoraController.buscaLivrosPorEditoraId(req, res));
 
 module.exports = router;
